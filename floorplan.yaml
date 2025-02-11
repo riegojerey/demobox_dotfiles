@@ -1,0 +1,324 @@
+type: picture-elements
+image: /local/floorplan/base.png?version=CD0DCFEAA2F0D43FC8C613EDA8DDB416
+elements:
+  - type: conditional
+    conditions:
+      - entity: switch.living_and_bedroom_switch_left
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.living_and_bedroom_switch_left
+        image: /local/floorplan/switch.living_and_bedroom_switch_left.png?version=5C5A046004FB3500960BA8FFAE38FF78
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: conditional
+    conditions:
+      - entity: switch.kitchen
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.kitchen
+        image: /local/floorplan/switch.kitchen.png?version=ADB26FF06ABCB2A230E486C63DA04C5A
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: conditional
+    conditions:
+      - entity: switch.living_and_bedroom_switch_right
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.living_and_bedroom_switch_right
+        image: /local/floorplan/switch.living_and_bedroom_switch_right.png?version=79CEF8656510975C5A40EDF391A88E20
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: conditional
+    conditions:
+      - entity: switch.livingrooms
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.livingrooms
+        image: /local/floorplan/switch.livingrooms.png?version=0FC381290DD625FC70DFEA90F1F21983
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: conditional
+    conditions:
+      - entity: switch.night_lamp
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.night_lamp
+        image: /local/floorplan/switch.night_lamp.png?version=1FD073D976FBE82A69207CC4D1BFFB37
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: conditional
+    conditions:
+      - entity: switch.kitchen_main
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.kitchen_main
+        image: /local/floorplan/switch.kitchen_main.png?version=940BDA9AB26696BAB3AA6A3B3513F8BE
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: conditional
+    conditions:
+      - entity: switch.hallway
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.hallway
+        image: /local/floorplan/switch.hallway.png?version=95F637E19CD9CA8643C56788D5E58F12
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: conditional
+    conditions:
+      - entity: switch.living_room_lamp
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.living_room_lamp
+        image: /local/floorplan/switch.living_room_lamp.png?version=C432CD218FBF630B0146940C2A98916D
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: conditional
+    conditions:
+      - entity: switch.bed_wall_lamp
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - switch.bed_wall_lamp
+        image: /local/floorplan/switch.bed_wall_lamp.png?version=CAB0A7BCD6174C8AA60D349C3D28E70A
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: state-icon
+    entity: switch.living_and_bedroom_switch_left
+    title: null
+    style:
+      top: 26.98%
+      left: 35.59%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: switch.kitchen
+    title: null
+    style:
+      top: 57.14%
+      left: 28.94%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: switch.living_and_bedroom_switch_right
+    title: null
+    style:
+      top: 35.25%
+      left: 57.79%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: switch.livingrooms
+    title: null
+    style:
+      top: 69.07%
+      left: 46.66%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: switch.night_lamp
+    title: null
+    style:
+      top: 24.40%
+      left: 57.39%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: switch.kitchen_main
+    title: null
+    style:
+      top: 62.91%
+      left: 35.91%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: switch.hallway
+    title: null
+    style:
+      top: 40.29%
+      left: 42.83%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: switch.living_room_lamp
+    title: null
+    style:
+      top: 51.58%
+      left: 51.30%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: switch.bed_wall_lamp
+    title: null
+    style:
+      top: 47.66%
+      left: 57.75%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: cover.curtain
+    title: null
+    style:
+      top: 53.26%
+      left: 63.89%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
