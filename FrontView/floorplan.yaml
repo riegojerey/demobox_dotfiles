@@ -1,0 +1,52 @@
+type: picture-elements
+image: /local/floorplan/base.png?version=CD7EDF4DB2B0A1D9CB522918E6E987CD
+elements:
+  - type: conditional
+    conditions:
+      - entity: input_boolean.outside_wall 
+        state: 'on'
+    elements:
+      - type: image
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        entity:
+          - input_boolean.outside_wall 
+        image: /local/floorplan/input_boolean.outside_wall .png?version=F4F7A921E340A793E1CC5EE1D26544CD
+        filter: none
+        style:
+          left: 50%
+          top: 50%
+          width: 100%
+          mix-blend-mode: lighten
+  - type: state-icon
+    entity: input_boolean.outside_wall 
+    title: null
+    style:
+      top: 66.50%
+      left: 23.94%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
+  - type: state-icon
+    entity: cover.curtain
+    title: null
+    style:
+      top: 65.20%
+      left: 53.10%
+      border-radius: 50%
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.3)
+    tap_action:
+      action: toggle
+    double_tap_action:
+      action: none
+    hold_action:
+      action: more-info
